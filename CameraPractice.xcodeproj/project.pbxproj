@@ -12,6 +12,7 @@
 		0D7D2FC41FC1327400252EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D2FC21FC1327400252EC1 /* Main.storyboard */; };
 		0D7D2FC61FC1327400252EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D2FC51FC1327400252EC1 /* Assets.xcassets */; };
 		0D7D2FC91FC1327400252EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D2FC71FC1327400252EC1 /* LaunchScreen.storyboard */; };
+		0D7D2FD61FC14BA000252EC1 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2FD51FC14BA000252EC1 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0D7D2FC51FC1327400252EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D7D2FC81FC1327400252EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D7D2FCA1FC1327400252EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7D2FD51FC14BA000252EC1 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,38 @@
 			isa = PBXGroup;
 			children = (
 				0D7D2FBE1FC1327400252EC1 /* AppDelegate.swift */,
-				0D7D2FC01FC1327400252EC1 /* ViewController.swift */,
-				0D7D2FC21FC1327400252EC1 /* Main.storyboard */,
-				0D7D2FC51FC1327400252EC1 /* Assets.xcassets */,
-				0D7D2FC71FC1327400252EC1 /* LaunchScreen.storyboard */,
+				0D7D2FD21FC132C500252EC1 /* Models */,
+				0D7D2FD11FC132C200252EC1 /* Views */,
+				0D7D2FD01FC132BF00252EC1 /* Controllers */,
 				0D7D2FCA1FC1327400252EC1 /* Info.plist */,
 			);
 			path = CameraPractice;
+			sourceTree = "<group>";
+		};
+		0D7D2FD01FC132BF00252EC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D2FC01FC1327400252EC1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D7D2FD11FC132C200252EC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D2FC21FC1327400252EC1 /* Main.storyboard */,
+				0D7D2FC71FC1327400252EC1 /* LaunchScreen.storyboard */,
+				0D7D2FC51FC1327400252EC1 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D7D2FD21FC132C500252EC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D2FD51FC14BA000252EC1 /* Resnet50.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			files = (
 				0D7D2FC11FC1327400252EC1 /* ViewController.swift in Sources */,
 				0D7D2FBF1FC1327400252EC1 /* AppDelegate.swift in Sources */,
+				0D7D2FD61FC14BA000252EC1 /* Resnet50.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF9NTXN425;
 				INFOPLIST_FILE = CameraPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.Smith.CameraPractice;
@@ -289,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DF9NTXN425;
 				INFOPLIST_FILE = CameraPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.Smith.CameraPractice;
